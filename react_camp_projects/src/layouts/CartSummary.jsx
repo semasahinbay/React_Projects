@@ -12,7 +12,7 @@ export default function CartSummary() {
   const { cartItems } = useSelector(state => state.cart);
   return (
     <div>
-      <Dropdown item text="My Carts">
+      <Dropdown item text="My Cart">
         <Dropdown.Menu>
           {cartItems.map(cartItem => (
             <DropdownItem key={cartItem.product.id}>
